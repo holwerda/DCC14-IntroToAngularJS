@@ -1,0 +1,36 @@
+<!--
+        Step 1: add attribute ng-app declaring what app to html to signify that AngularJS should be used (AngularJS referred to as 'ng')
+        Step 2: add script to bring in angular library
+        Step 3: add script to bring in angular route library
+        Step 4: add script to bring in angular resource library
+        Step 5: add script to bring in app.js (config)
+        Step 6: bring in controller js file
+        Step 7: set controller to use
+        Step 8: create link that specifies the route to go to (defined in app.js)
+        Step 9: add ng-view tag as placeholder
+-->
+
+<!DOCTYPE html>
+<html ng-app="superheroApp" ng-controller="dccSuperHeroCtrl">   <!-- Step 1 --><!-- Step 7-->
+<head>
+    <title>dcc10</title>
+</head>
+<body>
+
+<!-- Step 8 -->
+<a href="#/newSuperhero">Create New Superhero</a>
+
+<!-- Step 9 -->
+<ng-view>
+
+</ng-view>
+
+
+</body>
+<script type="text/javascript" src="lib/angular.js"></script>  <!-- Step 2 -->
+<script type="text/javascript" src="lib/angular-route.js" ></script> <!-- Step 3 -->
+<script type="text/javascript" src="lib/angular-resource.js" ></script> <!-- Step 4 -->
+<script type="text/javascript" src="js/app.js"></script> <!-- Step 5 -->
+<script type="text/javascript" src="js/controllers/dcc.2wayBindCtrl.js" ></script>  <!-- Step 6-->
+
+</html>

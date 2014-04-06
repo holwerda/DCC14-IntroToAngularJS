@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Clark Kent",
+        "emailAddress":"Superman@gmail.com"
+    },
+    {
+        "name": "Bruce Wayne",
+        "emailAddress":"Batman@gmail.com"
+    },
+    {
+        "name": "Lex Luthor",
+        "emailAddress":"GreatestCriminalMind@gmail.com"
+    },
+    {
+        "name": "Peter Parker",
+        "emailAddress":"Spiderman@gmail.com"
+    },
+    {
+        "name": "Thor",
+        "emailAddress":"GodOfThunder@gmail.com"
+    },
+    {
+        "name": "Wonder Woman",
+        "emailAddress":"WonderWoman@gmail.com"
+    },
+    {
+        "name": "Bruce Banner",
+        "emailAddress":"IncredibleHulk@gmail.com"
+    },
+    {
+        "name": "Tony Stark",
+        "emailAddress":"Ironman@gmail.com"
+    }
+]

@@ -1,0 +1,23 @@
+<!--
+        Step 1: add attribute ng-app to html to signify that AngularJS should be used (AngularJS referred to as 'ng')
+        Step 2: add script to bring in angular library
+        Step 3: bring in controller js file
+        Step 4: set controller to use
+        Step 5: use ng to get value
+-->
+
+<!DOCTYPE html>
+<html ng-app ng-controller="dccDemoCtrl">   <!-- Step 1 -->
+<head>
+    <title>dcc4</title>
+</head>
+<body>
+    {{ message }}    <!-- Step 3 -->
+
+    <div ng-controller="dccDemoCtrl2">
+        {{ message }}
+    </div>
+</body>
+<script type="text/javascript" src="lib/angular.min.js"></script>  <!-- Step 2 -->
+<script type="text/javascript" src="js/controllers/dcc.democtrl.js" ></script>  <!-- Step 3 -->
+</html>

@@ -1,0 +1,33 @@
+<!--
+        Step 1: add attribute ng-app to html to signify that AngularJS should be used (AngularJS referred to as 'ng')
+        Step 2: add script to bring in angular library
+        Step 3: create script function as controller
+        Step 4: set controller to use
+        Step 5: use ng to get value
+-->
+
+<!DOCTYPE html>
+<html ng-app ng-controller="dccDemoCtrl">   <!-- Step 1, Step 4 -->
+<head>
+    <title>dcc3</title>
+</head>
+<body>
+    {{ message }}    <!-- Step 5 -->
+
+    <div ng-controller="dccDemoCtrl2">   <!-- Step 4 to use other controller -->
+        {{ message }}
+    </div>
+</body>
+<script type="text/javascript" src="lib/angular.min.js"></script>  <!-- Step 2 -->
+<script type="text/javascript">
+
+    function dccDemoCtrl($scope){           <!-- Step 3 -->
+
+        $scope.message = 'Hello World!';
+    }
+
+    function dccDemoCtrl2($scope){          <!-- Step 3 2nd controller -->
+        $scope.message = 'Hello World! Controller 2!';
+    }
+</script>
+</html>

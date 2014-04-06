@@ -1,0 +1,27 @@
+<!--
+        Step 1: add attribute ng-app to html to signify that AngularJS should be used (AngularJS referred to as 'ng')
+        Step 2: add script to bring in angular library
+        Step 3: bring in controller js file
+        Step 4: set controller to use
+        Step 5: create input with binding superhero
+        Step 6: output superhero that is being typed in input
+-->
+
+<!DOCTYPE html>
+<html ng-app ng-controller="dccSuperHeroCtrl">   <!-- Step 1, Step 4 -->
+<head>
+    <title>dcc7</title>
+</head>
+<body>
+
+
+<input id="superhero" type="text" ng-model="superhero" >  <!-- Step 5 -->
+
+<div>
+   Who is the greatest superhero? {{ superhero }}             <!-- Step 6 -->
+</div>
+
+</body>
+<script type="text/javascript" src="lib/angular.min.js"></script>  <!-- Step 2 -->
+<script type="text/javascript"src="js/controllers/dcc.2wayBindCtrl.js" ></script>  <!-- Step 3 -->
+</html>
